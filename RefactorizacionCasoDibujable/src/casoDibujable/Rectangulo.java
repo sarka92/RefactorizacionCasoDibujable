@@ -1,4 +1,4 @@
-package org.casoDibujable;
+package casoDibujable;
 
 public class Rectangulo extends Geometria {
 // definición de variables miembro de la claes

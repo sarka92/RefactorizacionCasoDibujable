@@ -1,4 +1,4 @@
-package org.casoDibujable;
+package casoDibujable;
 
 import java.awt.Graphics;
 import java.awt.Color;
@@ -15,12 +15,15 @@ public class CirculoGrafico extends Circulo implements Dibujable {
 	}
 
 	// métodos de la interface Dibujable
+	@Override
 	public void dibujar(Graphics dw) {
 		dw.setColor(color);
-		dw.drawOval((int) (x - r), (int) (y - r), (int) (2 * r), (int) (2 * r));
+		dw.drawOval((int) (getX() - getR()), (int) (getY() - getR()), (int) (2 * getR()), (int) (2 * getR()));
 	}
 
+	@Override
 	public void setPosicion(double x, double y) {
-		;
+		setX(x);
+		setY(y);
 	}
 }

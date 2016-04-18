@@ -1,9 +1,11 @@
-package org.casoDibujable;
+package casoDibujable;
 
 public class Circulo extends Geometria {
 	static int numCirculos = 0;
 	public static final double PI = 3.14159265358979323846;
-	public double x, y, r;
+	private double x;
+	private double y;
+	private double r;
 
 	public Circulo(double x, double y, double r) {
 		this.x = x;
@@ -24,10 +26,12 @@ public class Circulo extends Geometria {
 		this(0.0, 0.0, 1.0);
 	}
 
+	@Override
 	public double perimetro() {
 		return 2.0 * PI * r;
 	}
 
+	@Override
 	public double area() {
 		return PI * r * r;
 	}
@@ -47,4 +51,29 @@ public class Circulo extends Geometria {
 		else
 			return d;
 	}
+
+	public double getX() {
+		return x;
+	}
+
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	public double getY() {
+		return y;
+	}
+
+	public void setY(double y) {
+		this.y = y;
+	}
+
+	public double getR() {
+		return r;
+	}
+
+	public void setR(double r) {
+		this.r = r;
+	}
+	
 }

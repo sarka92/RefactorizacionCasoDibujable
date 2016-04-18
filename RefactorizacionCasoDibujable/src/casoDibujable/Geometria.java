@@ -1,4 +1,4 @@
-package org.casoDibujable;
+package casoDibujable;
 
 public abstract class Geometria {
 	 // clase abstracta que no puede tener objetos

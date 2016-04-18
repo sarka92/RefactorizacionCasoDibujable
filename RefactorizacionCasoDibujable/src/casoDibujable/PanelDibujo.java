@@ -1,4 +1,4 @@
-package org.casoDibujable;
+package casoDibujable;
 
 import java.awt.*;
 import java.util.ArrayList;
