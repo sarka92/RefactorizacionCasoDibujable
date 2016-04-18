@@ -14,6 +14,7 @@ public class PanelDibujo extends Panel {
 		this.v = va;
 	}
 
+	@Override
 	// redefinición del método paint()
 	public void paint(Graphics g) {
 		Dibujable dib;
