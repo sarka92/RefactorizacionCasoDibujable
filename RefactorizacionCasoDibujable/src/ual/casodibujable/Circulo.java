@@ -1,6 +1,6 @@
-package casoDibujable;
+package ual.casodibujable;
 
-public class Circulo extends Geometria {
+public class Circulo implements Geometria {
 	static int numCirculos = 0;
 	public static final double PI = 3.14159265358979323846;
 	private double x;

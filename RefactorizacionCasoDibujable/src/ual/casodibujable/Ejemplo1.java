@@ -1,27 +1,32 @@
-package casoDibujable;
+package ual.casodibujable;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
 import java.awt.*;
 
 class Ejemplo1 {
-	
-	private Ejemplo1(){
-		
+
+	private Ejemplo1() {
+
 	}
-	public static void main(String arg[]) throws InterruptedException {
-		System.out.println("Comienza main()...");
-		
+
+	public static void main(String[] args) throws InterruptedException {
+
+		Logger.getLogger("Comienza main()...");
 		Circulo c = new Circulo(2.0, 2.0, 4.0);
-		System.out.println("Radio = " + c.getR() + " unidades.");
-		System.out.println("Centro = (" + c.getX() + "," + c.getY() + ") unidades.");
+
+		Logger.getLogger("Radio = " + c.getR() + " unidades.");
+
+		Logger.getLogger("Centro = (" + c.getX() + "," + c.getY()
+				+ ") unidades.");
 		Circulo c1 = new Circulo(1.0, 1.0, 2.0);
 		Circulo c2 = new Circulo(0.0, 0.0, 3.0);
 		c = c1.elMayor(c2);
-		System.out.println("El mayor radio es " + c.getR() + ".");
-		
+
+		Logger.getLogger("El mayor radio es " + c.getR() + ".");
 		c = Circulo.elMayor(c1, c2);
-		System.out.println("El mayor radio es " + c.getR() + ".");
+
+		Logger.getLogger("El mayor radio es " + c.getR() + ".");
 		VentanaCerrable ventana = new VentanaCerrable(
 				"Ventana abierta al mundo...");
 		ArrayList<Object> v = new ArrayList<>();
@@ -36,6 +41,7 @@ class Ejemplo1 {
 		ventana.add(mipanel);
 		ventana.setSize(500, 400);
 		ventana.setVisible(true);
-		System.out.println("Termina main()...");
+
+		Logger.getLogger("Termina main()...");
 	}
 } // fin de main()

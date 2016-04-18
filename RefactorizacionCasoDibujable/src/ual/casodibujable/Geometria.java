@@ -1,4 +1,4 @@
-package casoDibujable;
+package ual.casodibujable;
 
 public interface Geometria {
 	 // clase abstracta que no puede tener objetos

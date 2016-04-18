@@ -1,4 +1,4 @@
-package casoDibujable;
+package ual.casodibujable;
 
 import java.awt.Graphics;
 import java.awt.Color;

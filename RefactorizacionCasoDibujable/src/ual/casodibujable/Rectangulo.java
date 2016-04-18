@@ -1,4 +1,4 @@
-package casoDibujable;
+package ual.casodibujable;
 
 public class Rectangulo implements Geometria {
 	// definición de variables miembro de la claes
@@ -14,7 +14,7 @@ public class Rectangulo implements Geometria {
 		x2 = p2x;
 		y1 = p1y;
 		y2 = p2y;
-		numRectangulos++;
+		setNumRectangulos(getNumRectangulos() + 1);
 	}
 
 	public Rectangulo() {
@@ -30,5 +30,13 @@ public class Rectangulo implements Geometria {
 	@Override
 	public double area() {
 		return (x1 - x2) * (y1 - y2);
+	}
+
+	public static int getNumRectangulos() {
+		return numRectangulos;
+	}
+
+	public static void setNumRectangulos(int numRectangulos) {
+		Rectangulo.numRectangulos = numRectangulos;
 	}
 }
